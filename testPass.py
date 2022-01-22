@@ -73,6 +73,25 @@ class testAccount(unittest.TestCase) :
 
 
 
+  def testDeleteAccount(self) :
+      '''
+      This method will test if we can remove an account from our accountList
+      '''
+      
+      # Creating the accounts afresh to enable the delete() to work now that the tearDown() method clears things up
+
+      self.newAccount.saveAccount()
+      testAccount = Account('Twitter', 'ShaviyaVictor', '29834070')
+
+      testAccount.saveAccount()
+
+      # Deleting an account
+      self.newAccount.deleteAccount()
+
+      self.assertEqual(len(Account.accountList), 1)
+
+
+
 
 if __name__ == '__main__' :
     unittest.main()
