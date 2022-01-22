@@ -28,10 +28,22 @@ class testAccount(unittest.TestCase) :
     '''
     Create testInstance() TestCase to test if the object is initialized properly/ instantiated correctly
     '''
+
     self.assertEqual(self.newAccount.account, 'Instagram')
     self.assertEqual(self.newAccount.username, 'ignitionreads')
     self.assertEqual(self.newAccount.password, '33176819')
 
+
+
+  def testSaveAccount(self) :
+    '''
+    TestCase to test if the account object is saved into the accountList[]
+
+    Saving the new account
+    '''
+    self.newAccount.saveAccount()
+
+    self.assertEqual(len(Account.accountList), 1)
   
 
 
