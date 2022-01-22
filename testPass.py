@@ -37,4 +37,11 @@ class testAccount(unittest.TestCase) :
 
 
 
+  if __name__ == '__main__' :
+    unittest.main()
+    '''
+    Confirming that anything inside the if block should run only if this is the file that is currently being run
+
+    Then provide a CLI that collects all the test methods and executes them using the unittest.main()
+    '''
   
