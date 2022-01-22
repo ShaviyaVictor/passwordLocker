@@ -55,4 +55,22 @@ class Account :
 
 
 
+  @classmethod
+  def findAccountByAcc(cls, account) :
+    '''
+    Method that takes in an account and returns credentials that match that account
+
+    Args:
+      account: The account credentials to search for
+
+    Returns:
+      Account of person that matches the account
+    '''
+
+    for account in cls.accountList :
+      if account.account == account :
+        return account
+
+
+
 

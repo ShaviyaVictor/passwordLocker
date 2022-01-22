@@ -100,7 +100,9 @@ class testAccount(unittest.TestCase) :
     self.newAccount.saveAccount()
     testAccount = Account('Twitter', 'ShaviyaVictor', '29834070')
 
-    foundAccount = Account.findByAccount('Twitter')
+    testAccount.saveAccount()
+
+    foundAccount = Account.findAccountByAcc('Twitter')
 
     self.assertEqual(foundAccount.username, testAccount.username)
 
