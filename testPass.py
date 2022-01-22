@@ -74,21 +74,35 @@ class testAccount(unittest.TestCase) :
 
 
   def testDeleteAccount(self) :
-      '''
-      This method will test if we can remove an account from our accountList
-      '''
+    '''
+    This method will test if we can remove an account from our accountList
+    '''
       
-      # Creating the accounts afresh to enable the delete() to work now that the tearDown() method clears things up
+    # Creating the accounts afresh to enable the delete() to work now that the tearDown() method clears things up
 
-      self.newAccount.saveAccount()
-      testAccount = Account('Twitter', 'ShaviyaVictor', '29834070')
+    self.newAccount.saveAccount()
+    testAccount = Account('Twitter', 'ShaviyaVictor', '29834070')
 
-      testAccount.saveAccount()
+    testAccount.saveAccount()
 
-      # Deleting an account
-      self.newAccount.deleteAccount()
+    # Deleting an account
+    self.newAccount.deleteAccount()
 
-      self.assertEqual(len(Account.accountList), 1)
+    self.assertEqual(len(Account.accountList), 1)
+
+
+
+  def testFindAccountByAcc(self) :
+    '''
+    TestCase to check if we can find an account by account name and display the information
+    '''
+
+    self.newAccount.saveAccount()
+    testAccount = Account('Twitter', 'ShaviyaVictor', '29834070')
+
+    foundAccount = Account.findByAccount('Twitter')
+
+    self.assertEqual(foundAccount.username, testAccount.username)
 
 
 
