@@ -10,7 +10,15 @@ class Account :
   Use pass keyword to allow creation of empty block of code so as to return a null or nothing when it runs
   '''
 
-  pass
+  # pass
+
+
+
+  accountList = []
+  '''
+  Declare a class variable that'll belong to the entire class and will be accessed by all instances of the class
+  The variable will be used to store our created account objects 
+  '''
 
 
 
