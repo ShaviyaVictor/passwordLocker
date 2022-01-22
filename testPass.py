@@ -47,6 +47,20 @@ class testAccount(unittest.TestCase) :
   
 
 
+  def testSaveAccounts(self) :
+    '''
+    TestCase to check if we can save multiple accounts to our accountList[]
+    '''
+    self.newAccount.saveAccount()
+
+    # Creating another account to see if it will be saved
+    testAccount = Account('Twitter', 'ShaviyaVictor', '29834070')
+
+    testAccount.saveAccount()
+
+    self.assertEqual(len(Account.accountList), 2)
+
+
 
 
 if __name__ == '__main__' :
