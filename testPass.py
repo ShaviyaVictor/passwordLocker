@@ -20,7 +20,7 @@ class testAccount(unittest.TestCase) :
 
     Create new account object to facilitate the pre-tests
     '''
-    self.newAccount = Account('Instagram', 'ignionreads', '33176819')
+    self.newAccount = Account('Instagram', 'ignitionreads', '33176819')
 
 
 
