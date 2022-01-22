@@ -23,6 +23,13 @@ class testAccount(unittest.TestCase) :
     self.newAccount = Account('Instagram', 'ignitionreads', '33176819')
 
 
+  def tearDown(self) :
+    '''
+    tearDown() method cleans up the saved instances after each test case has run
+    '''
+    Account.accountList = []
+
+
 
   def testInstance(self) :
     '''
@@ -50,6 +57,10 @@ class testAccount(unittest.TestCase) :
   def testSaveAccounts(self) :
     '''
     TestCase to check if we can save multiple accounts to our accountList[]
+
+    Will bring an assertion error since everytime we run a test, we create instances of account and saving them and all are being counted hence we get 3 != 2 coz the first instance has been counted twice
+
+    The already saved accounts are thus cleaned up after calling the tearDown() method right after the setUp() method
     '''
     self.newAccount.saveAccount()
 
