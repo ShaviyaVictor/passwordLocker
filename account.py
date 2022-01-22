@@ -47,4 +47,12 @@ class Account :
 
 
 
+  def deleteAccount(self) :
+    '''
+    Create the method to delete objects from the accountList
+    '''
+    Account.accountList.remove(self)
+
+
+
 
