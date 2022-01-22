@@ -39,3 +39,12 @@ class Account :
 
 
 
+  def saveAccount(self) :
+    '''
+    Create the method to save objects into the accountList[]
+    '''
+    Account.accountList.append(self)
+
+
+
+
