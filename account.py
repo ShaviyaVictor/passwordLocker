@@ -14,5 +14,14 @@ class Account :
 
 
 
-  
+  def __init__(self, account, username, password) :
+    '''
+    __init__ method declaration that helps us define properties for our objects.
+    self is a variable that represents the instance of the object itself
+    
+    Args :
+      account : New account type name.
+      username : New username for the account.
+      phone : New password for the account.
+    '''
 
