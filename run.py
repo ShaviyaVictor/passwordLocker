@@ -185,20 +185,22 @@ def main() :
 
     else :
 
+      print('\n.')
+
       print('I for sure didn\'t get that.\nPlease use the provided short codes')
 
+      print('\n.')
 
 
 
 
 
 
+if __name__ == '__main__' :
 
-
-
-
-
-
-
+  main()
+  '''
+  Making the main function to run only if it was run from this module.
+  '''
 
 
