@@ -42,7 +42,12 @@ def deleteAccount(account) :
 
 
 
+def findAccount(account) :
+  '''
+  Function that finds an account by account and returns the account
+  '''
 
+  return Account.findAccountByAcc(account)
 
 
 
