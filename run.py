@@ -24,4 +24,13 @@ def createAccount(account, username, password) :
   return newAccount
 
 
+def saveAccount(account) :
+  '''
+  Function to save our accounts
+  '''
+
+  account.saveAccount()
+
+
+
 
