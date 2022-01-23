@@ -1,7 +1,7 @@
 # passwordLockerApp
 
 This project was generated with [Python CLI](#) version 3.8.10     
-[passwordLocker_Screenshot](#)
+![passwordLocker_Screenshot](https://github.com/ShaviyaVictor/passwordLocker/blob/main/Assets/Screenshot%20from%202022-01-23%2021-54-16.png)
 
 #### Author
 **Victor Shaviya**    
