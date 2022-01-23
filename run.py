@@ -51,4 +51,17 @@ def findAccount(account) :
 
 
 
+def accountExists(account) :
+  '''
+  Function that checks if an account exists with that account name and return a Boolean
+  '''
+
+  return Account.accountExists(account)
+
+
+
+
+
+
+
 
