@@ -108,19 +108,28 @@ class testAccount(unittest.TestCase) :
 
 
 
-  def testAccountExist(self) :
+  # def testAccountExist(self) :
+  #   '''
+  #   TestCase to check if we can return a Booleanif we cannot find an account
+  #   '''
+
+  #   self.newAccount.saveAccount()
+
+  #   testAccount = Account('LinkedIn', 'ShaviyaVictor', '29834070')
+
+  #   accountExist = Account.accountExists("LinkedIn")
+
+  #   self.assertTrue(accountExist)
+
+
+
+
+  def testDisplayAllAccounts(self) :
     '''
-    TestCase to check if we can return a Booleanif we cannot find an account
+    TestCase method that returns a list of all accounts saved
     '''
 
-    self.newAccount.saveAccount()
-
-    testAccount = Account('LinkedIn', 'ShaviyaVictor', '29834070')
-
-    accountExist = Account.accountExists("LinkedIn")
-
-    self.assertTrue(accountExist)
-
+    self.assertEqual(Account.displayAccounts(), Account.accountList)
 
 
 
