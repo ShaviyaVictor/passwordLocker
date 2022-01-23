@@ -183,6 +183,12 @@ def main() :
 
 
 
+    else :
+
+      print('I for sure didn\'t get that.\nPlease use the provided short codes')
+
+
+
 
 
 
