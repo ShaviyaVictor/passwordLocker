@@ -69,9 +69,29 @@ class Account :
 
     for account in cls.accountList :
       if account.account == account :
-        
+
         return account
 
+
+      
+  @classmethod
+  def accountExists(cls, account) :
+    '''
+    Method that checks if an account exists from the accountList[]
+
+    Args :
+      account : account to search if it exists
+
+    Returns :
+      Boolean : True or false depending on if the account exists
+    '''
+
+    for account in cls.accountList :
+      if account.account == account :
+
+        return True
+
+      return False
 
 
 
