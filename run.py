@@ -76,11 +76,11 @@ def main() :
 
   user = input()
 
-  print('\n')
+  print('\n.')
 
   print(f'Hello {user},\nDo you have an account with us?\n(Notice!Notice!Notice!\nDear {user}, you can only save 4 accounts with a free subscription account.)')
 
-  print('\n')
+  print('\n.')
 
   while True :
     print('Use these short-codes:\ncc - to create new account credentials...\ndc - to display your credentials...\nfc - to find a saved account...\nex - to exit the vault.')
@@ -91,7 +91,7 @@ def main() :
 
     if shortCode == 'cc' :
 
-      print('\n')
+      print('\n.')
 
       print('New Account Credentials:')
 
@@ -108,11 +108,11 @@ def main() :
 
       saveAccount(createAccount(account, username, password))
 
-      print('\n')
+      print('\n.')
 
       print(f'Successful. Credentials for your {account} account have been created.')
 
-      print('\n')
+      print('\n.')
 
 
 
@@ -122,21 +122,21 @@ def main() :
 
         print('Successful.\nBelow are your credentials saved with us...')
 
-        print('\n')
+        print('\n.')
 
         for account in displayAccounts() :
 
           print(f'Account: {account.account}\n-->Username: {account.username}\n-->Password: {account.password}')
 
-          print('\n')
+          print('\n.')
 
       else :
 
-        print('\n')
+        print('\n.')
 
         print('Oops! Your vault is empty.\nSpare yourself the memory hustle and save your credentials with us.')
 
-        print('\n')
+        print('\n.')
 
 
 
@@ -150,7 +150,7 @@ def main() :
 
         search4Acc = findAccount(searchAccount)
 
-        print('\n')
+        print('\n.')
 
         print(f'Successful!\nCredentials for your {search4Acc.account} account')
 
@@ -160,6 +160,25 @@ def main() :
         print(f'-->Password: {search4Acc.password}')
 
         print('-' * 45)
+
+      else :
+        
+        print('\n.')
+
+        print('Oops! Your vault doesn\'t seem to contain such an account saved.')
+
+        print('\n.')
+
+
+
+    elif shortCode == 'ex' :
+
+      print('\n.')
+
+      print('We hope we have been of service to you..\nBye...')
+
+      print('\n.')
+
 
 
 
