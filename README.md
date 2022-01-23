@@ -29,8 +29,8 @@ To view the [project's live site](#).
 
 #### How to run the application
 To run the application, open the cloned file in terminal and run the following commands:     
-  `$ chmod +x run.py`
-  `$ ./run.py`
+  > `$ chmod +x run.py`    
+  > `$ ./run.py`    
 To run test for the application $ python3 testPass.py
 
 ## Technologies Used

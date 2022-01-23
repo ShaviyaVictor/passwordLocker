@@ -111,4 +111,4 @@ class Account :
 
     accountFound = Account.findAccountByAcc(account)
 
-    pyperclip.copy(accountFound.username)
+    pyperclip.copy(accountFound.account)
