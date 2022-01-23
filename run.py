@@ -85,6 +85,10 @@ def main() :
   while True :
     print('Use these short-codes:\ncc - to create new account credentials...\ndc - to display your credentials...\nfc - to find a saved account...\nex - to exit the vault.')
 
+    shortCode = input().lower()
+
+    
+
 
 
 
