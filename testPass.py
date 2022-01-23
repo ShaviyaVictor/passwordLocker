@@ -134,16 +134,16 @@ class testAccount(unittest.TestCase) :
 
 
 
-  def testCopyUsername(self) :
-    '''
-    TestCase to confirm that we are copying the Username from a found account
-    '''
+  # def testCopyUsername(self) :
+  #   '''
+  #   TestCase to confirm that we are copying the Username from a found account
+  #   '''
 
-    self.newAccount.saveAccount()
+  #   self.newAccount.saveAccount()
 
-    Account.copyUsername('ignitionreads')
+  #   Account.copyUsername('ignitionreads')
 
-    self.assertEqual(self.newAccount.username, pyperclip.paste())
+  #   self.assertEqual(self.newAccount.username, pyperclip.paste())
 
 
 

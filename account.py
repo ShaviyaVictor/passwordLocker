@@ -1,4 +1,5 @@
-
+# Import the module for Copy() Paste() behavior functionality
+import pyperclip
 
 
 
@@ -105,4 +106,9 @@ class Account :
 
 
 
-  
+  @classmethod
+  def copyUsername(cls, account) :
+
+    accountFound = Account.findAccountByAcc(account)
+
+    pyperclip.copy(accountFound.username)
