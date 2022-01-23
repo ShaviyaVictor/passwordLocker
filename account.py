@@ -96,6 +96,11 @@ class Account :
 
 
   @classmethod
+  def displayAccounts(cls) :
+    '''
+    Method that returns the accountList
+    '''
 
+    return cls.accountList
 
 
