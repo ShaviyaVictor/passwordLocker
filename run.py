@@ -60,6 +60,33 @@ def accountExists(account) :
 
 
 
+def displayAccounts() :
+  '''
+  Function that returns all the saved accounts
+  '''
+
+  return Account.displayAccounts()
+
+
+
+
+
+def main() :
+  print('Hallo, Welcome to your Pass-Vault.\nWhat is your name?')
+
+  user = input()
+
+  print('\n')
+
+  print(f'Hello {user},\nDo you have an account with us?\n(Notice!Notice!Notice!\nDear {user}, you can only save 4 accounts with a free subscription account.)')
+
+  print('\n')
+
+  while True :
+    print('Use these short-codes:\ncc - to c')
+
+
+
 
 
 
