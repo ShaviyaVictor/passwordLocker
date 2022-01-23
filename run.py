@@ -1,15 +1,18 @@
-#!/usr/bin/env python 3.8
+#!/usr/bin/env python3.8
 
 from account import Account
 
 
 def intro() :
-  print("               ____                        _                        _    _      ")
-  print("              |  _ \                      | |                      | | / /      ")
-  print("              | |_) )  ____  ___   ___    | |      _____     ____  | |/ /       ")
-  print("              |  __/  / _  |/ __  / __    | |     /  _  \   / ___| | | :        ")
-  print("              | |    / (_| |\__ \ \__ \ - | |___ (  (_)  ) | |___  | |\ \       ")
-  print("              |_|    \_____| ___/  ___/   |_____) \_____/   \____| |_| \_\      ")
+  print("*                                                                                        *")
+  print("      *        ____                        _                        _    _        *       ")
+  print("              |  _ \                      | |                      | | / /                ")
+  print("              | |_) )  ____  ___   ___    | |      _____     ____  | |/ /                 ")
+  print("              |  __/  / _  |/ __  / __    | |     /  _  \   / ___| | | :                  ")
+  print("              | |    / (_| |\__ \ \__ \ - | |___ (  (_)  ) | |___  | |\ \                 ")
+  print("              |_|    \_____| ___/  ___/   |_____) \_____/   \____| |_| \_\                ")
+  print("      *                                                                           *       ")
+  print("*                                                                         Ⓒshaviya      *")
 intro()
 
 
@@ -78,7 +81,7 @@ def main() :
 
   print('\n.')
 
-  print(f'Hello {user},\nDo you have an account with us?\n(Notice!Notice!Notice!\nDear {user}, you can only save 4 accounts with a free subscription account.)')
+  print(f'Hello {user},\nDo you have an account with us?\n                    Notice!Notice!Notice!\nYou can only save 4 accounts with a free subscription account.')
 
   print('\n.')
 
