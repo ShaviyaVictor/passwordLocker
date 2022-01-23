@@ -72,7 +72,7 @@ class Account :
       if account.account == account :
 
         return account
-deleteAccount
+
 
       
   @classmethod

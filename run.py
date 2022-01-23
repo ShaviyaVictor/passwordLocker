@@ -87,6 +87,8 @@ def main() :
 
     shortCode = input().lower()
 
+
+
     if shortCode == 'cc' :
 
       print('\n')
@@ -104,7 +106,42 @@ def main() :
       print('Password:')
       password = input()
 
-      
+      saveAccount(createAccount(account, username, password))
+
+      print('\n')
+
+      print(f'Successful. Credentials for your {account} account have been created.')
+
+      print('\n')
+
+
+
+    elif shortCode == 'dc' :
+
+      if displayAccounts() :
+
+        print('Successful.\nBelow are your credentials saved with us...')
+
+        print('\n')
+
+        for account in displayAccounts() :
+
+          print(f'Account: {account.account}\n-->Username: {account.username}\n-->Password: {account.password}')
+
+          print('\n')
+
+      else :
+
+        print('\n')
+
+        print('Oops! Your vault is empty.\nSpare yourself the memory hustle and save your credentials with us.')
+
+        print('\n')
+
+
+
+
+
 
 
 
