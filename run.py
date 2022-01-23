@@ -87,7 +87,28 @@ def main() :
 
     shortCode = input().lower()
 
-    
+    if shortCode == 'cc' :
+
+      print('\n')
+
+      print('New Account Credentials:')
+
+      print('-' * 24)
+
+      print('Account Name:')
+      account = input()
+
+      print('Username:')
+      username = input()
+
+      print('Password:')
+      password = input()
+
+      
+
+
+
+
 
 
 
