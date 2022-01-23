@@ -33,4 +33,17 @@ def saveAccount(account) :
 
 
 
+def deleteAccount(account) :
+  '''
+  Function to delete an account
+  '''
+
+  account.deleteAccount()
+
+
+
+
+
+
+
 
