@@ -140,6 +140,27 @@ def main() :
 
 
 
+    elif shortCode == 'fc' :
+
+      print('Enter the account you want to search for...')
+
+      searchAccount = input()
+
+      if accountExists(searchAccount) :
+
+        search4Acc = findAccount(searchAccount)
+
+        print('\n')
+
+        print(f'Successful!\nCredentials for your {search4Acc.account} account')
+
+        print('-' * 45)
+
+        print(f'-->Username: {search4Acc.username}')
+        print(f'-->Password: {search4Acc.password}')
+
+        print('-' * 45)
+
 
 
 
