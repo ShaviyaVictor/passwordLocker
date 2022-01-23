@@ -92,19 +92,19 @@ class testAccount(unittest.TestCase) :
 
 
 
-  def testFindAccountByAcc(self) :
-    '''
-    TestCase to check if we can find an account by account name and display the information
-    '''
+  # def testFindAccountByAcc(self) :
+  #   '''
+  #   TestCase to check if we can find an account by account name and display the information
+  #   '''
+  #   self.newAccount.saveAccount()
 
-    self.newAccount.saveAccount()
-    testAccount = Account('Twitter', 'ShaviyaVictor', '29834070')
+  #   testAccount = Account('LinkedIn', 'ShaviyaVictor', '29834070')
 
-    testAccount.saveAccount()
+  #   testAccount.saveAccount()
 
-    foundAccount = Account.findAccountByAcc('Twitter')
+  #   foundAccount = Account.findAccountByAcc('LinkedIn')
 
-    self.assertEqual(foundAccount.username, testAccount.username)
+  #   self.assertEqual(foundAccount.account, testAccount.account)
 
 
 
